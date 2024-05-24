@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task_Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #715e5e;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .form-group button {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 3px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #0056b3;
+    }
+    /* #text {
+        margin-top: 5px;
+    } */
+  </style>
 </head>
 <body>
-    <h1 id="topic">TASK MANAGER</h1>
-    <div>
-        <div id="left">
-            <table border="1" id="tabledata">
-                <thead>
-                    <th>Division</th>
-                    <th>Sub-Division</th>
-                    <th>Duration</th>
-                    <th>Task</th>
-                    <th>Action</th>
-                </thead>
-                <tbody id="display"> 
-                </tbody>
-            </table>
-            
-            <div id="filterborder">
-                <label for="filter">Select:</label>
-                <select id="filterDropdown">
-                    <option value="all">All</option>
-                    <option value="personal">Personal</option>
-                    <option value="official">Official</option>
-                </select>
-                <button id="startstop" onclick="filterTable()">&nbsp;Filter&nbsp;</button>
-            </div>
-        </div>
-        <div id="right">
-            <h2 style="text-align: center; justify-content: center;">Add Task</h2><br>
-            &nbsp;&nbsp; &nbsp;&nbsp;Stop Watch:<br><br>
-            <div id="stopwatch">00:00:00</div>
-            <div id="button">
-                <button id="startstop" onClick="startstop()">&nbsp;Start&nbsp;&nbsp;</button>
-                <button id="startstop" onclick="Reset()">Reset</button>
-            </div>
-
-            <form id="taskForm">
-                &nbsp;&nbsp;&nbsp;&nbsp;Division:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                <!-- <input type="text" id="division" name="Division" placeholder="Enter Division"><br><br> -->
-                <select id="formdropdown">
-                    <option value="select">Select</option>
-                    <option value="personal">Personal</option>
-                    <option value="official">Official</option>
-                </select>
-                <br><br>
-
-                &nbsp;&nbsp;&nbsp;&nbsp;Sub-Division: <input type="text" id="Subdivision" name="Subdivision" placeholder="Enter Sub-Division"><br><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;Task:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="task" name="task" placeholder="Enter Task"><br><br><br>
-                
-                <center><button type="button" id="startstop" onclick="addTask()">Add Task</button></center>
-            </form>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- <h1 id="text">LOGIN TO MANAGE YOUR TASKS!!</h1> -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginform">
+      <div class="form-group">
+        <label for="email">Username</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </div>
 </body>
+<script src="Login.js"></script>
 </html>
