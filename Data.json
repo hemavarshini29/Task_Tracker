@@ -1,0 +1,15 @@
+ {"login" : [
+    {
+        "email":"scheduler1@gmail.com",
+        "password":"123"
+    },
+    {
+        "email":"scheduler2@gmail.com",
+        "password":"456"
+    },
+    {
+        "email":"scheduler3@gmail.com",
+       "password":"789"
+    }
+]
+ }

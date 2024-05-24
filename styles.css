@@ -1,0 +1,96 @@
+#left {
+    float: left;
+    margin: 100px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #CCD3CA;
+}
+#right {
+    float: right;
+
+    border: 3px solid black;
+    margin-right: 150px;
+  
+   
+}
+
+#filterborder {
+    margin: 20px;
+}
+
+#button {
+    margin: 30px;
+    margin-left: 120px;
+    
+    
+}
+
+#stopwatch {
+    border: 1px solid black;
+    background: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    
+  
+}
+
+#taskForm {
+    float: right; 
+    margin-top: 20px;
+    width: 320px;
+    height: 280px;
+   
+} 
+
+#topic {
+    text-align: center;
+   
+    padding: 15px;
+}
+
+#startstop {
+   border-radius: 8px;
+   background-color: #101010; 
+   opacity: 0.9;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #585c0e;
+}
+
+#startstop:hover {
+    background-color: #565d3a;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#tabledata {
+    width: 100%;
+    border: 3px solid;
+    border-spacing: 5px;
+    
+}
+th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    
+  }
+  
+  
